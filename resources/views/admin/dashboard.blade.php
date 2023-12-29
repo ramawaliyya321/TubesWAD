@@ -1,5 +1,5 @@
 @extends('admin.layouts.master')
-@section('title', 'E-Learning | HOME')
+@section('title', 'LMS SMAN 1 Dayeuhkolot')
 @section('content')
         <!-- page content -->
 <div class="right_col" role="main">
