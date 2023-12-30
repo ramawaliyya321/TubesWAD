@@ -25,7 +25,7 @@
   <style>
       .login{
           background: url("{{
-          asset('images/login_background.jpg')
+          asset('images/wallhaven-vm3dqm_1920x1080.png')
           }}") no-repeat center center fixed;
           -webkit-background-size: cover;
           -moz-background-size: cover;
@@ -44,7 +44,7 @@
           <section class="login_content">
             <form action="{{ route('postLogin') }}" method="post">
             {{ csrf_field() }}
-              <h1>Login Form</h1>
+              <h1>SMAN 1 Dayeuhkolot</h1>
                @if(isset($errors))
                 @if ( count($errors) > 0)
                 <div class="alert alert-danger">
@@ -67,7 +67,7 @@
                     </div>
                 @endif
               <div>
-                <input type="text" name="email" class="form-control" placeholder="Emal" required="" />
+                <input type="text" name="email" class="form-control" placeholder="E-mail" required="" />
               </div>
               <div>
                 <input type="password" name="password" class="form-control" placeholder="Password" required="" />
