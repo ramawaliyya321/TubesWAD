@@ -141,7 +141,7 @@ class ExamController extends Controller
 
         $existingExamSubmission = ExamSubmission::where('exam_id',$request->exam_id)
             ->where('student_id',$loggedStudentId)->first();
-        if (count($existingExamSubmission)>0){
+        if (is_countable($existingExamSubmission) && count($existingExamSubmission)>0){
 
             Session::flash('Error Message', 'Sorry you already submitted you answer');
             return redirect()->route('getCourseExamsForStudent',['teacher_course_id'=>$teacherCourse->id]);
@@ -224,7 +224,7 @@ class ExamController extends Controller
 
         $existingExamSubmission = ExamSubmission::where('exam_id',$request->exam_id)
             ->where('student_id',$loggedStudentId)->first();
-        if (count($existingExamSubmission)>0){
+        if (is_countable($existingExamSubmission) && count($existingExamSubmission)>0){
 
             Session::flash('Error Message', 'Sorry you already submitted you answer');
             return redirect()->route('getCourseExamsForStudent',['teacher_course_id'=>$teacherCourse->id]);
