@@ -44,7 +44,7 @@
           <section class="login_content">
             <form action="{{ route('postLogin') }}" method="post">
             {{ csrf_field() }}
-              <h1>SMAN 1 Dayeuhkolot</h1>
+              <h1 style="color: black;">SMAN 1 Dayeuhkolot</h1>
                @if(isset($errors))
                 @if ( count($errors) > 0)
                 <div class="alert alert-danger">
@@ -73,7 +73,7 @@
                 <input type="password" name="password" class="form-control" placeholder="Password" required="" />
               </div>
                 <div class="left">
-                   <input type="checkbox" name="remember" />  <label for="" > Remember me</label>
+                   <input type="checkbox" name="remember" />  <label style="color: black;" for="" > Remember me</label>
                 </div>
                 <input id="" type="hidden" name="urlPath" value="{{$urlPath}}">
                <div>
@@ -83,8 +83,8 @@
               <div class="clearfix"></div>
 
               <div class="separator">
-                <p class="change_link">New to site?
-                  <a href="#signup" class="to_register"> Create Account </a>
+                <p style="color: black;" class="change_link">New to site?
+                  <a style="color: black;" href="#signup" class="to_register"> Create Account </a>
                 </p>
 
                 <div class="clearfix"></div>
