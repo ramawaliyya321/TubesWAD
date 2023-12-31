@@ -17,7 +17,7 @@ class DashboardController extends Controller
     {
         $totalCourses = Course::where('status',CourseStatus::$APPROVED)->get()->count();
 
-        $totalTeachers = Teacher::get()->count();
+        $totalTeachers = Teacher::count();
         $totalStudents = Student::get()->count();
         $totalCertified = StudentCourse::where('status',CourseStudentStatus::$COMPLETED)->get()->count();
         

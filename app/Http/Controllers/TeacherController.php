@@ -31,6 +31,7 @@ class TeacherController extends Controller
         return view('admin.teachers.teachers_list',['teachers'=>$teachers]);
     }
 
+    
     // Add new Teacher
     public function add(Request $request)
     {
